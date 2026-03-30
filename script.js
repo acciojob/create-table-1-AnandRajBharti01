@@ -1,4 +1,4 @@
-let c = 3;
+// let c = 1;
 let table = document.getElementById("sampleTable")
 function insert_Row() {
     //Write your code here
@@ -6,11 +6,11 @@ function insert_Row() {
 	let td1 = document.createElement('td');
 	let td2 = document.createElement('td');
 
-	td1.textContent = `Row${c} cell1`
-	td2.textContent = `Row${c} cell2`
-	c+=1;
+	td1.textContent = `New cell1`
+	td2.textContent = `New cell2`
+	// c+=1;
 
-	row.append(td1,td2);
-	table.append(row)
+	row.prepend(td1,td2);
+	table.prepend(row)
 	
 }
