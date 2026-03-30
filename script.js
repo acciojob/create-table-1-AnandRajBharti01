@@ -10,7 +10,7 @@ let c = 1;
 	td2.textContent = `New Cell${c+1}`
 	c+=1;
 
-	row.prepend(td1,td2);
+	row.append(td1,td2);
 	table.prepend(row)
 	
 }
