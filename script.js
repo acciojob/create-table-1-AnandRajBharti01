@@ -14,6 +14,8 @@ function insert_Row() {
 
 	row.append(td1);
 	row.append(td2);
-	table.prepend(row)
+	// table.prepend(row)
+
+ table.insertBefore(row, table.firstChild);
 	
 }
